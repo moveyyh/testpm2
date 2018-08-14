@@ -1,13 +1,16 @@
 module.exports = {
     apps: [{
       name: "myServer",
-      script: "server.js"
+      script: "server.js",
+      output: './logs/out.log',
+      error: './logs/error.log',
+	    log: './logs/combined.outerr.log'
     }],
     deploy: {
       // "production" is the environment name
       production: {
         // SSH key path, default to $HOME/.ssh
-        key: "/path/to/some.pem",
+        key: "C:\Users\YH\.ssh",
         // SSH user
         user: "root",
         // SSH host
@@ -18,14 +21,14 @@ module.exports = {
         // GIT remote/branch
         ref: "origin/master",
         // GIT remote
-        repo: "git@github.com:Username/repository.git",
+        repo: "git@github.com:moveyyh/testpm2.git",
         // path in the server
-        path: "/var/www/my-repository",
+        path: "/var/www/my_test_delay",
         // Pre-setup command or path to a script on your local machine
-        'pre-setup': "apt-get install git ; ls -la",
+        // 'pre-setup': "npm install",
         // Post-setup commands or path to a script on the host machine
         // eg: placing configurations in the shared dir etc
-        'post-setup': "ls -la",
+        // 'post-setup': "ls -la",
         // pre-deploy action
         'pre-deploy-local': "echo 'This is a local executed command'",
         // post-deploy action
