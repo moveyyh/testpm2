@@ -9,7 +9,7 @@ module.exports = {
         // SSH key path, default to $HOME/.ssh
         key: "~/.ssh",
         // SSH user
-        user: "yh",
+        user: "root",
         // SSH host
         host: ["118.184.218.191"],
         // SSH options with no command-line flag, see 'man ssh'
