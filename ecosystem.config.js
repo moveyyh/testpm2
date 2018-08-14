@@ -10,7 +10,7 @@ module.exports = {
       // "production" is the environment name
       production: {
         // SSH key path, default to $HOME/.ssh
-        key: "C:\Users\YH\.ssh",
+        key: "C:\\Users\\YH\\.ssh",
         // SSH user
         user: "root",
         // SSH host
@@ -19,7 +19,7 @@ module.exports = {
         // can be either a single string or an array of strings
         ssh_options: "StrictHostKeyChecking=no",
         // GIT remote/branch
-        ref: "origin/master",
+        ref: "master",
         // GIT remote
         repo: "git@github.com:moveyyh/testpm2.git",
         // path in the server
