@@ -10,11 +10,7 @@ module.exports = {
       // "production" is the environment name
       production: {
         // SSH key path, default to $HOME/.ssh
-<<<<<<< HEAD
         key: "C:\\Users\\YH\\.ssh",
-=======
-        // key: "C:\\Users\\YH\\.ssh",
->>>>>>> bd5afc01e0a792999c7256238b9980ef8b13808d
         // SSH user
         user: "root",
         // SSH host
